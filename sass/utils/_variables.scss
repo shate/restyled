@@ -1,0 +1,16 @@
+$footerH : 145px; /*Высота футтера*/
+$headrH : 876px; /*Высота хедера*/
+$base-font-size: 14px;
+$base-line-height : 25px;
+$base-font: Verdana, Geneva, sans-serif;
+$base-font-color : #ccc;
+$header-color : rgba(#000,.5);
+$footer-color : #0a0a0a;
+/*Цвет ссылок*/
+$normal: #ddd; 
+$hover : red;
+
+[class^="ico-"]{
+	display: inline-block;
+}
+

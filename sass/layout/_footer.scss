@@ -1,0 +1,109 @@
+footer {
+	background-color: $footer-color;
+	height: $footerH;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url("../img/footer.jpg");
+    min-width: 1000px;
+	.cf{
+		div:first-child{
+			@include span(2 of 12);
+			box-sizing: border-box;
+			padding-top: 15px;
+			padding-left: 25px;
+			position: relative;
+			&:after{
+				@include psevdo;
+				width: 1px;
+				height: 72px;
+				background-color: #aeaa69;
+				    right: -2px;
+    top: 13px;
+			}
+		}
+		
+		div:nth-child(2){
+			@include span(5 of 12);
+			box-sizing: border-box;
+			padding-top: 45px;
+			padding-left: 12px;
+		}
+		div:last-child{
+			@include span(5 of 12 last);
+			box-sizing: border-box;
+			padding-top: 30px;
+		}
+	}
+	.soc-list{
+		@include inline-block-list(5px);
+		float: right;
+		li{
+			background-color: #ecf2ed;
+			text-align: center;
+			width: 36px;
+			height: 36px;
+			box-sizing: border-box;
+			line-height: 46px;
+			margin: 0 3px;
+			cursor: pointer;
+			@include transition-duration(1s);
+			&:hover{
+				background-color: #65a216;
+
+			}
+			&.vk{
+				a{
+				@include ico(vk);					
+				}
+				&:hover{
+					a{
+						@include ico(vk-h);
+					}
+				}
+			}
+			&.fb{
+				a{
+					@include ico(fb);					
+				}
+				&:hover{
+					a{
+						@include ico(fb-h);
+					}
+				}
+			}
+			&.inst{
+				a{
+					@include ico(inst);					
+				}
+				&:hover{
+					a{
+						@include ico(inst-h);
+					}
+				}
+			}
+			&.yt{
+				a{
+					@include ico(yt);					
+				}
+				&:hover{
+					a{
+						@include ico(yt-h);
+					}
+				}
+			}
+			a{
+				@include transition-duration(0.1s);
+			}
+		}
+	}
+	nav{
+		ul{
+			li:after{
+				color: #9acd56;
+			}
+			a:hover{
+				color: #a2e748;
+			}
+		}
+	}
+}

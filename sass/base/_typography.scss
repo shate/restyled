@@ -1,0 +1,55 @@
+
+
+@include font-face("plumb-regular", font-files("plumb-regular.ttf", "plumb-regular.eot","plumb-regular.woff","plumb-regular.woff2"));
+@include font-face("plumb-medium", font-files("plumb-medium.ttf", "plumb-medium.eot","plumb-medium.woff","plumb-medium.woff2"));
+@include font-face("plumb-light", font-files("plumb-light.ttf", "plumb-light.eot","plumb-light.woff","plumb-light.woff2"));
+@include font-face("magistralBold", font-files("MGS65__U.ttf", "MGS65__U.eot","MGS65__U.woff","MGS65__U.svg"));
+@include font-face("magistralMedium", font-files("MGS45__U.ttf", "MGS45__U.eot","MGS45__U.woff","MGS45__U.svg"));
+body{
+	font-family: $base-font;	
+	color: $base-font-color;
+	font-size: $base-font-size;	
+	
+}
+h1,h2,h3,h4,h5{
+	text-align: center;
+}
+h1{
+	font-family: "plumb-light";
+	font-size: 62px;
+	
+}
+h3{
+	font-family: "plumb-regular";
+	font-size: 32px;
+	color: #e1e1e1;
+}
+h4{
+	font-size: 22px;
+	color: #dcdcdc;
+}
+h5{
+	font-family: "plumb-medium";
+	font-size: 24px;
+}
+h6{
+	font-size: 18px;
+	text-align: center;
+	color: #8eda29;
+}
+p{
+	line-height: 23px;
+}
+a{
+	@include link-colors($normal, $hover);
+	text-decoration: none;
+}
+.green{
+	color: #578719;
+}
+.tac{
+	text-align: center;
+}
+b{
+	font-weight: bold;
+}

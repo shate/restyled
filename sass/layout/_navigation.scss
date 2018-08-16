@@ -1,0 +1,55 @@
+nav {
+	ul{
+	@include horizontal-list(22px);
+	a{
+		font-family: "magistralBold";
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 13px;
+		&.green{
+		font-size: 11px;
+		text-transform: none;
+
+	   }
+	  }
+	li{
+		position: relative;
+		&:after{
+			content: '.';
+			position: absolute;
+			font-size: 30px;
+		    top: -18px;
+		    right: -5px
+		}
+		&:last-child:after{
+			color: transparent;
+		}
+	}	
+	}
+}
+ul.header_nav {	
+	overflow: visible;
+	li:last-child{
+		border: 2px solid rgba(#7bd800, .55);
+		border-radius: 15px;
+		padding: 0 32px;
+		height: 30px;
+		line-height: 28px;
+		margin-top: -7px;
+        margin-left: 20px;
+		a{
+			font-family: "magistralBold";
+			font-size: 11px;
+			letter-spacing: 0.03em;
+		}
+	}
+	a:hover{
+		color: #58f502;
+		text-shadow:0 16px 52px rgba(#65f219, .7),0 -16px 52px rgba(#65f219, .7), 16px 0 52px rgba(#65f219, .7), -16px 0 52px rgba(#65f219, .7);
+	}
+	li:after{
+       color: #5b5b5b;
+	}
+}
+
+
